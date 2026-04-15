@@ -1,4 +1,4 @@
-import { Instagram, Phone, MapPin, Clock } from 'lucide-react'
+import { Camera, Phone, MapPin, Clock } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 
 export function Footer() {
@@ -14,7 +14,7 @@ export function Footer() {
           </p>
           <div className="flex gap-4">
             <a href="https://www.instagram.com/maison_shim" target="_blank" className="hover:text-primary transition-colors">
-              <Instagram className="h-6 w-6" />
+              <Camera className="h-6 w-6" />
             </a>
           </div>
         </div>
