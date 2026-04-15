@@ -1,32 +1,31 @@
-# Enhanced Vite React TypeScript Template
+# [Nom de ton site ou projet]
 
-This template includes built-in detection for missing CSS variables between your Tailwind config and CSS files.
+Ce projet est un site web généré par [Blink AI](https://blink.ai) et hébergé via GitHub Pages.
 
-## Features
+## 🚀 Démo en direct
 
-- **CSS Variable Detection**: Automatically detects if CSS variables referenced in `tailwind.config.cjs` are defined in `src/index.css`
-- **Enhanced Linting**: Includes ESLint, Stylelint, and custom CSS variable validation
-- **Shadcn/ui**: Pre-configured with all Shadcn components
-- **Modern Stack**: Vite + React + TypeScript + Tailwind CSS
+Tu peux voir le site en ligne ici : *[Ajoute ici l'URL de ton site GitHub Pages, ex: https://ton-pseudo.github.io/ton-repo]*
 
-## Available Scripts
-# Run all linting (includes CSS variable check)
-npm run lint
+## 🛠️ Technologies utilisées
 
-# Check only CSS variables
-npm run check:css-vars
+* *Génération IA :* Blink AI
+* *Hébergement :* GitHub Pages
+* *Frontend :* HTML, CSS, JavaScript (Modifie cette ligne si ton site utilise React, Vue ou Vite)
 
-# Individual linting
-npm run lint:js    # ESLint
-npm run lint:css   # Stylelint
+## ⚙️ Configuration GitHub Pages (Résolution d'écran blanc)
 
-## CSS Variable Detection
+Si le site affiche un écran blanc avec un logo de chargement lors du déploiement sur GitHub Pages, cela est généralement dû à un problème de chemins d'accès vers les fichiers statiques (CSS/JS).
 
-The template includes a custom script that:
+*Pour corriger cela :*
+1. Assurez-vous que les chemins d'accès dans le fichier index.html sont *relatifs*. 
+   * ❌ Faux : <script src="/main.js"></script>
+   * ✅ Correct : <script src="./main.js"></script> (Ajoutez le .)
+2. Dans les paramètres de votre répertoire GitHub (*Settings > Pages*), assurez-vous que la source de déploiement pointe vers la bonne branche (généralement main ou master) et le bon dossier racine.
 
-1. **Parses `tailwind.config.cjs`** to find all `var(--variable)` references
-2. **Parses `src/index.css`** to find all defined CSS variables (`--variable:`)
-3. **Cross-references** them to find missing definitions
-4. **Reports undefined variables** with clear error messages
+## 💻 Développement en local
 
+Pour faire tourner ce projet sur ta machine locale :
 
+1. Clone ce répertoire :
+   ```bash
+   git clone [https://github.com/](https://github.com/)[ton-pseudo]/[nom-du-repo].git
