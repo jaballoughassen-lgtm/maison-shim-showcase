@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Geist:wght@100..900&display=swap');
+@import '@blinkdotnew/ui/styles';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 40% 98%;
+    --foreground: 24 10% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 24 10% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 10% 15%;
+    
+    --primary: 38 90% 55%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 30 20% 90%;
+    --secondary-foreground: 24 10% 15%;
+    
+    --muted: 30 10% 90%;
+    --muted-foreground: 24 5% 45%;
+    
+    --accent: 38 90% 45%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 38 90% 55%;
+    
+    --radius: 1rem;
+
+    --font-sans: 'Geist', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+  }
+
+  .dark {
+    --background: 24 10% 8%;
+    --foreground: 30 40% 98%;
+    
+    --card: 24 10% 10%;
+    --card-foreground: 30 40% 98%;
+    
+    --popover: 24 10% 10%;
+    --popover-foreground: 30 40% 98%;
+    
+    --primary: 38 90% 55%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 24 10% 15%;
+    --secondary-foreground: 30 40% 98%;
+    
+    --muted: 24 10% 15%;
+    --muted-foreground: 30 10% 70%;
+    
+    --accent: 38 90% 55%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 30 40% 98%;
+
+    --border: 24 10% 15%;
+    --input: 24 10% 15%;
+    --ring: 38 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased min-h-screen flex flex-col;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight leading-tight;
+  }
+}
+
+.glass {
+  @apply bg-background/70 backdrop-blur-xl border border-white/20;
+}
+
+.elegant-shadow {
+  box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, hsl(38, 90%, 55%) 0%, hsl(38, 90%, 45%) 100%);
+}
+
+.text-gold {
+  @apply bg-clip-text text-transparent gold-gradient;
+}
+
+#root {
+  @apply flex flex-col flex-1;
+}
