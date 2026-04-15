@@ -11,7 +11,6 @@ This template includes built-in detection for missing CSS variables between your
 
 ## Available Scripts
 
-```bash
 # Run all linting (includes CSS variable check)
 npm run lint
 
@@ -21,7 +20,6 @@ npm run check:css-vars
 # Individual linting
 npm run lint:js    # ESLint
 npm run lint:css   # Stylelint
-```
 
 ## CSS Variable Detection
 
